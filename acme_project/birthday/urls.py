@@ -14,4 +14,5 @@ urlpatterns = [
         name='delete'
     ),
     path('<int:pk>/', views.BirthdayDetailView.as_view(), name='detail'),
+    path('<int:pk>/comment/', views.add_comment, name='add_comment'),
 ]
